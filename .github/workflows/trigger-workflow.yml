@@ -17,7 +17,7 @@ jobs:
 
     with:
       # 仅当事件是 push 到 main 分支时，才将 trigger_downstream 设置为 true
-      trigger_page_buildtrigger_downstream: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      trigger_page_build: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
 
     # 2. 传递 PAT secret
     secrets:
