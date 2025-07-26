@@ -5,8 +5,7 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
   schedule:
-    # 为避免大量发包触发 API 上限，使用略微随机一些的方法
-    - cron: ${{ format('{0} * * * *', github.run_id % 60) }}
+    - cron: '0 16 * * *'
 
 jobs:
   call_reusable_workflow:
