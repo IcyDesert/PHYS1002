@@ -10,7 +10,7 @@ on:
 jobs:
   call_reusable_workflow:
     # 测试阶段使用测试分支
-    uses: HITSZ-OpenAuto/repos-management/.github/workflows/reusable_worktree_generate.yml@feat/unified-trigger
+    uses: HITSZ-OpenAuto/repos-management/.github/workflows/reusable_worktree_generate.yml@main
     permissions:
       contents: write
       pull-requests: write
